@@ -172,3 +172,14 @@ nav a:hover {
   border-top: 1px solid;
   border-right: 1px solid;
 }
+
+.site-plan image {
+  width: 150px;
+  height: auto;
+}
+
+#site-plan {
+  max-width: 100%;
+  height: auto;
+}
+
