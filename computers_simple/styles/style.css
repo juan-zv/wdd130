@@ -1,0 +1,194 @@
+a {
+    text-decoration: none;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+#nav-bar {
+    all: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+#logo-nav {
+    grid-column: 1/2;
+    text-align: center;
+    margin: auto;
+}
+
+nav {
+    grid-column: 2/3;
+    text-align: center;
+    margin: auto;
+    display: flex;
+}
+
+#home-nav {
+    text-decoration: none;
+    padding: 35px;
+}
+
+#tech-blog-nav {
+    text-decoration: none;
+    padding: 35px;
+}
+
+#recommendations-nav {
+    text-decoration: none;
+    padding: 35px;
+}
+
+#home-nav:hover {
+    text-decoration: none;
+    padding: 35px;
+    background-color: #5E4C5A;
+}
+
+#tech-blog-nav:hover {
+    text-decoration: none;
+    padding: 35px;
+    background-color: #5E4C5A;
+}
+
+#recommendations-nav:hover {
+    text-decoration: none;
+    padding: 35px;
+    background-color: #5E4C5A;
+}
+
+#button-nav {
+    width: 15px;
+    height: 15px;
+    grid-column: 3/4;
+    justify-self: right;
+    margin: auto;
+    padding: 35px;
+    border-radius: 50%;
+    background-color: white;
+    color: #5E4C5A;
+}
+
+#button-nav:hover {
+    width: 15px;
+    height: 15px;
+    grid-column: 3/4;
+    justify-self: right;
+    margin: auto;
+    padding: 35px;
+    border-radius: 50%;
+    background-color: #5E4C5A;
+    color: white;
+}
+
+footer {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    background-color: #5E4C5A;
+}
+
+#left-footer {
+    grid-column: 1/2;
+}
+
+#right-footer {
+    grid-column: 2/3;
+    justify-self: right;
+    padding-top: 2em;
+}
+
+.icon-footer {
+    margin-top: 50px;
+}
+
+
+
+
+
+
+form {
+    /* Center the form on the page */
+    margin: 0 auto;
+    width: 1200px;
+    justify-self: center;
+    /* Form outline */
+    padding: 1em;
+    border: 1px solid #CCC;
+    border-radius: 1em;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  form li + li {
+    margin-top: 1em;
+  }
+  
+  label {
+    /* Uniform size & alignment */
+    display: inline-block;
+    width: 90px;
+    text-align: right;
+  }
+  
+  input,
+  textarea {
+    /* To make sure that all text fields have the same font settings
+       By default, textareas have a monospace font */
+    font: 1em sans-serif;
+  
+    /* Uniform text field size */
+    width: 1100px;
+    box-sizing: border-box;
+  
+    /* Match form field borders */
+    border: 1px solid #999;
+  }
+  
+  input:focus,
+  textarea:focus {
+    /* Additional highlight for focused elements */
+    border-color: #000;
+  }
+  
+  textarea {
+    /* Align multiline text fields with their labels */
+    vertical-align: top;
+  
+    /* Provide space to type some text */
+    height: 5em;
+  }
+  
+  .button {
+    /* Align buttons with the text fields */
+    padding-left: 90px; /* same size as the label elements */
+  }
+  
+  button {
+    /* This extra margin represent roughly the same space as the space
+       between the labels and their text fields */
+    margin-left: .5em;
+  }
+
+  #feedback {
+    background-color: antiquewhite;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: .5em;
+    /* make this element invisible until we are ready for it */
+    display: none;       
+}
+.moveDown {
+    margin-top: 3em;
+}
+
+#form-container {
+    align-self: center;
+}
