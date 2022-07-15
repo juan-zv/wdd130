@@ -5,11 +5,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Page</title>
+    <link rel="stylesheet" href="styles/main.css">
 </head>
 
 <body>
   <h1>About Me</h1>
-  <img alt="Selfie in my room" src="images/myphoto.jpg"/>
+  
+  
+  
+   <!--<img alt="Selfie in my room" src="images/myphoto.jpg"/> -->
+  <img id="myImg" src="images/myphoto.jpg" alt="Me" style="width:100%;max-width:300px">
+
+  <div id="myModal" class="modal">
+
+    <span class="close">&times;</span>
+
+    <img class="modal-content" id="img01">
+
+    <div id="caption"></div>
+  </div>
+
+
+
   <h2>Juan Zurita</h2>
   <p>My name is Juan Zurita and I'm from Bolivia. I am studying Applied Technology 
     because I really enjoy computers and everything related with technology. </p> 
@@ -24,5 +41,24 @@
      He hears your pleas. He is faithful and dependable. He will fulfill His promises." 
      It is from the october 2020 General Conference but I really feel these words deep in my heart until today.</p>
 </body>
+
+<script>
+var modal = document.getElementById("myModal");
+
+var img = document.getElementById("myImg");
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+img.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}
+
+var span = document.getElementsByClassName("close")[0];
+
+span.onclick = function() {
+  modal.style.display = "none";
+}
+</script>
 
 </html>
