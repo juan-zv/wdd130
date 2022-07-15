@@ -20,7 +20,7 @@
     --nav-hover-background-color: #5E4C5A;
   }
   
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6, .tech-blog-concern {
     font-family: var(--heading-font);
     color: var(--headline-color-on-white);
   }
@@ -30,7 +30,10 @@ p {
     color: var(--paragraph-color);
   }
 
-
+.tech-blog-solution {
+    font-family: var(--paragraph-font);
+    font-size: large;
+}
 
 /*MAIN CSS (NAV AND FOOTER)*/
 
@@ -165,7 +168,6 @@ form {
   }
   
   label {
-    /* Uniform size & alignment */
     display: inline-block;
     width: 90px;
     text-align: right;
@@ -173,29 +175,21 @@ form {
   
   input,
   textarea {
-    /* To make sure that all text fields have the same font settings
-       By default, textareas have a monospace font */
-    font: 1em sans-serif;
+    font:large var(--paragraph-font);
   
-    /* Uniform text field size */
     width: 1100px;
     box-sizing: border-box;
   
-    /* Match form field borders */
     border: 1px solid #999;
   }
   
   input:focus,
   textarea:focus {
-    /* Additional highlight for focused elements */
     border-color: #000;
   }
   
   textarea {
-    /* Align multiline text fields with their labels */
     vertical-align: top;
-  
-    /* Provide space to type some text */
     height: 5em;
   }
   
