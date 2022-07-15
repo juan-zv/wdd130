@@ -30,10 +30,6 @@ p {
     color: var(--paragraph-color);
   }
 
-.tech-blog-solution {
-    font-family: var(--paragraph-font);
-    font-size: large;
-}
 
 /*MAIN CSS (NAV AND FOOTER)*/
 
@@ -368,4 +364,26 @@ form {
     color: #E1F0C4;
     background-color: #5E4C5A;
 
+}
+
+
+                /*TECH BLOG CSS*/
+
+.tech-blog-solution {
+    font-family: var(--paragraph-font);
+    font-size: large;
+    padding-top: 2%;
+    padding-right: 15%;
+    text-align: center;
+    margin-top: -1%;
+}
+
+.tech-blog-concern {
+    padding-left: 15%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+form {
+    margin-bottom: 6%;
 }
