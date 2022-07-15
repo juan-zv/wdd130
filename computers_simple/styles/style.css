@@ -1,3 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=PT+Sans&family=Ubuntu&display=swap');
+
+:root {
+    --primary-color: #5E4C5A   ;
+    --secondary-color: #55917F ;
+    --accent1-color: #6BAB90;
+    --accent2-color: #E1F0C4;
+  
+    --heading-font: "PT Sans";
+    --paragraph-font: Ubuntu, Helvetica, sans-serif;
+  
+    --headline-color-on-white: #5E4C5A;  /* headlines on a white background */ 
+    --headline-color-on-color: #E1F0C4; /* headlines on a colored background */ 
+    --paragraph-color-on-white: #5E4C5A; /* paragraph text on a white background */ 
+    --paragraph-color-on-color: #E1F0C4; /* paragraph text on a colored background */ 
+    --paragraph-background-color: #5E4C5A  ;
+    --nav-link-color: #5E4C5A;
+    --nav-background-color: #6BAB90;
+    --nav-hover-link-color: #E1F0C4;
+    --nav-hover-background-color: #5E4C5A;
+  }
+  
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--heading-font);
+    color: var(--headline-color-on-white);
+  }
+
+p {
+    font-family: var(--paragraph-font);
+    color: var(--paragraph-color);
+  }
+
+
+
+/*MAIN CSS (NAV AND FOOTER)*/
+
 a {
     text-decoration: none;
 }
@@ -104,8 +140,7 @@ footer {
 }
 
 
-
-
+                    /*FORM CSS*/
 
 
 form {
@@ -191,4 +226,152 @@ form {
 
 #form-container {
     align-self: center;
+}
+
+                        /* HOME PAGE CSS*/
+
+#home-main-div {
+    background-color: #6BAB90;
+}
+
+
+.home-tittle {
+    text-align: center;
+    padding-top: 5%;
+}
+
+.home-img {
+    width: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+.home-p {
+    margin: 5% 20%;
+    text-align: center;
+    padding-bottom: 5%;
+}
+
+
+
+.button-main {
+    grid-column: 2;
+    display: block;
+    margin-left: auto ;
+    margin-right: auto;
+    margin-top: -5%;
+
+    background-color: grey;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+
+
+
+
+#main-cpu {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    margin-top: 15%;
+}
+
+#main-cpu img {
+    grid-column: 1;
+    margin-left: 20%
+}
+
+#main-cpu p {
+    grid-column: 2;
+    padding: 5%;
+    margin-right: 8%;
+    text-align: center;
+    color: #E1F0C4;
+    background-color: #5E4C5A;
+}
+
+
+
+
+
+#main-memory {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    margin-top: 15%;
+}
+
+#main-memory img {
+    grid-column: 1;
+    margin-left: 20%
+}
+
+#main-memory p {
+    grid-column: 2;
+    padding: 5%;
+    margin-right: 8%;
+    text-align: center;
+    color: #E1F0C4;
+    background-color: #5E4C5A;
+}
+
+
+
+
+
+
+#main-storage {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    margin-top: 15%;
+}
+
+#main-storage img {
+    grid-column: 1;
+    margin-left: 20%
+}
+
+#main-storage p {
+    grid-column: 2;
+    padding: 5%;
+    margin-right: 8%;
+    text-align: center;
+    color: #E1F0C4;
+    background-color: #5E4C5A;
+
+}
+
+
+
+
+
+
+#main-gpu {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    margin-top: 15%;
+    margin-bottom: 15%;
+}
+
+#main-gpu img {
+    grid-column: 1;
+    margin-left: 20%
+}
+
+#main-gpu p {
+    grid-column: 2;
+    padding: 5%;
+    margin-right: 8%;
+    text-align: center;
+    color: #E1F0C4;
+    background-color: #5E4C5A;
+
 }
