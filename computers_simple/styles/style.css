@@ -30,7 +30,9 @@ p {
     color: var(--paragraph-color);
   }
 
-
+body {
+    max-width: 1920px;
+}
 /*MAIN CSS (NAV AND FOOTER)*/
 
 #navvv {
@@ -135,6 +137,25 @@ footer {
     display: grid;
     grid-template-columns: 1fr 2fr;
     background-color: #5E4C5A;
+    color: var(--accent2-color);
+}
+
+#left-footer h1 {
+    color: var(--accent2-color);
+    margin-left: 5%;
+}
+
+#left-footer p {
+    margin-left: 5%;
+}
+
+#left-footer a {
+    text-decoration: none;
+    margin-left: 5%;
+    margin-bottom: 15%;
+    color: var(--accent2-color);
+    font-family: var(--paragraph-font);
+    font-size: 1.5em;
 }
 
 #left-footer {
@@ -234,13 +255,14 @@ form {
                         /* HOME PAGE CSS*/
 
 #home-main-div {
-    background-color: #6BAB90;
+    background-color: #5E4C5A;
 }
 
 
 .home-tittle {
     text-align: center;
     padding-top: 5%;
+    color: var(--accent2-color);
 }
 
 .home-img {
@@ -256,6 +278,7 @@ form {
     margin: 5% 20%;
     text-align: center;
     padding-bottom: 5%;
+    color: white;
 }
 
 
@@ -382,6 +405,10 @@ form {
 
                 /*TECH BLOG CSS*/
 
+#tech-blog-main-div {
+    background-color: #5E4C5A;
+}
+
 .tech-blog-solution {
     font-family: var(--paragraph-font);
     font-size: large;
@@ -413,6 +440,11 @@ form {
     font: var(--heading-font);
     text-align: center;
     padding-top: 5%;
+    background-color: #5E4C5A;
+}
+
+.recommendations-tittle h1 {
+    color: var(--accent2-color);
 }
 
 .recommendations-img {
@@ -429,6 +461,7 @@ form {
     text-align: center;
     padding-bottom: 5%;
     font-family: var(--paragraph-font);
+    color: white;
 }
 
 .best-item-tittle h1 {
@@ -442,9 +475,11 @@ form {
     margin-top: 4%;
     margin-left: 30%;
     margin-right: 30%;
-    color: var(--accent2-color);
+    color: var(--nav-hover-link-color);
     padding: 3%;
     border-radius: 25px;
+    font-size: 1.5em;
+
 }
 
 /* .recommendations-item1 {
@@ -464,6 +499,7 @@ form {
     grid-column: 1/4;
     grid-row: 1;
     background-color: var(--accent1-color);
+    height: 550px;
 }
 
 .recommendations-item1 {
