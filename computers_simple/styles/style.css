@@ -54,7 +54,6 @@ body {
 }
 
 #nav-bar {
-    all: none;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
 }
@@ -450,7 +449,6 @@ form {
 
 .recommendations-tittle {
     font-family:var(--heading-font);
-    font: var(--heading-font);
     text-align: center;
     padding-top: 5%;
     background-color: #5E4C5A;
